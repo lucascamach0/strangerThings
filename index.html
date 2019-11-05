@@ -1,0 +1,45 @@
+<html>
+<head>
+<style type="text/css">
+
+#main_container {
+	position:relative;
+}
+
+#light_on {
+	position:absolute;
+	display: block;
+	left: 0;
+	top: 0;
+}
+
+</style>
+
+
+<script type="text/javascript">
+		var message = 'rfgnzrbhivaqbfhmvr';
+		var i = 0;
+        setInterval(function(){
+			
+					if(message.length != i){
+						document.getElementById("light_on").src = "" + message.charAt(i) + ".png";
+						i++;
+					}
+					else{
+						i = 0;
+						document.getElementById("light_on").src = "reset.png";
+						
+					}
+					
+				},650);	
+		
+
+    </script>
+</head>
+<body>
+<div id="main_container">
+	<img src="background.png">
+	<img center id="light_on" src="">
+</div>
+</body>
+</html>
